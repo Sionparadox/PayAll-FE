@@ -33,7 +33,7 @@ jobs:
       # 빌드 파일 압축
       - name: Create deployment package
         run: |
-          tar -czvf ../deployment.tar.gz .next/ public/ package.json package-lock.json .env
+          tar -czvf deployment.tar.gz .next/ public/ package.json package-lock.json .env
 
       # 압축된 아티팩트 저장
       - name: Upload build artifact
